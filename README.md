@@ -17,7 +17,7 @@ It runs entirely in the browser (no backend) and saves your tasks in **LocalStor
 
 ## 🚀 Demo
 (After you publish using GitHub Pages, update this link)  
-👉 [Live Demo]()
+👉 [Live Demo](https://ai-todo-task.netlify.app/)
 
 ---
 
