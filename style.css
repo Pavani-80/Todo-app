@@ -1,0 +1,44 @@
+:root{
+  --bg:#0f1220; --card:#171a2b; --muted:#8a93b2; --text:#eef1ff;
+  --accent:#6aa6ff; --accent-2:#77ffcc; --danger:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;
+  background:linear-gradient(135deg,#0f1220,#12162a);
+  color:var(--text)
+}
+header{padding:28px 20px; text-align:center}
+h1{margin:0; font-size:clamp(22px,4vw,36px)}
+.app{max-width:900px;margin:0 auto; padding:0 16px 48px}
+.bar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center}
+input[type="text"], input[type="date"], select{
+  background:var(--card); color:var(--text); border:1px solid #2b3353;
+  border-radius:12px; padding:12px 14px; outline:none; min-width:140px
+}
+input[type="text"]{flex:1; min-width:260px}
+button{border:0; padding:12px 16px; border-radius:12px; cursor:pointer;
+  color:#0d0f1a; font-weight:600}
+.btn{background:var(--accent)}
+.btn-ghost{background:transparent; color:var(--muted); border:1px dashed #2b3353}
+.btn-danger{background:var(--danger); color:#fff}
+.panel{margin-top:16px; background:var(--card); border:1px solid #232a47;
+  border-radius:16px; padding:14px}
+.row{display:grid; grid-template-columns: 34px 1fr 120px 100px 100px 40px;
+  gap:10px; align-items:center}
+.todo{padding:8px; border-radius:12px; border:1px solid #2b3353; background:#12152a}
+.todo.dragging{opacity:.5}
+.pill{font-size:12px; padding:4px 8px; border-radius:999px; display:inline-block;
+  border:1px solid #2b3353; color:var(--muted)}
+.pill.low{border-color:#2e7d32; color:#9cffad}
+.pill.med{border-color:#e0a800; color:#ffe18f}
+.pill.high{border-color:#b71c1c; color:#ff9f9f}
+.muted{color:var(--muted)}
+.flex{display:flex; gap:10px; align-items:center}
+.between{display:flex; justify-content:space-between; align-items:center}
+.list{display:grid; gap:10px; margin-top:10px}
+.empty{opacity:.6; text-align:center; padding:24px}
+.footer{margin-top:20px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)}
+a{color:var(--accent-2); text-decoration:none}
+.kbd{border:1px solid #2b3353; padding:2px 6px; border-radius:6px; font-size:12px; color:var(--muted)}

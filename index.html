@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI To-Do</h1>
+    <div class="muted">Fast, offline to-do list with priorities, due dates, filters, and drag-and-drop. Data stays in your browser.</div>
+  </header>
+
+  <div class="app">
+    <div class="panel">
+      <div class="bar">
+        <input id="taskInput" type="text" placeholder="What do you want to get done? (Press Enter)" />
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="med" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <input id="due" type="date"/>
+        <button id="addBtn" class="btn">Add Task</button>
+        <button id="clearDone" class="btn-ghost">Clear Completed</button>
+      </div>
+    </div>
+
+    <div class="panel between">
+      <div class="flex">
+        <input id="search" type="text" placeholder="Search tasks"/>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="done">Completed</option>
+          <option value="overdue">Overdue</option>
+          <option value="today">Due Today</option>
+        </select>
+      </div>
+      <div class="muted">Tips: <span class="kbd">Enter</span> add • <span class="kbd">e</span> edit • drag handle ⠿ to reorder</div>
+    </div>
+
+    <div id="list" class="list"></div>
+
+    <div class="footer">
+      <div id="counts"></div>
+      <div>
+        <button id="exportBtn" class="btn-ghost">Export JSON</button>
+        <button id="importBtn" class="btn-ghost">Import JSON</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
